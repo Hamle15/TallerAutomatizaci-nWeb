@@ -56,8 +56,8 @@ public class ParaBankRegisterStepsDefinitions {
         accountNumber = openAccount.getNewAccountNumber();
     }
 
-    @Then("valido que la cuenta exista en la opcion de Accounts Overview")
-    public void Valido_que_la_cuenta_exista_en_la_opcion_de_accounts_overview() {
+    @Then("Valido que la cuenta exista en la opcion de Accounts Overview")
+    public void valido_que_la_cuenta_exista_en_la_opcion_de_accounts_overview() {
         openAccount.clickOpenAccountOverviewLink();
 
         WebElement accountNumberElement = openAccount.getDriver().findElement(By.linkText(accountNumber));
